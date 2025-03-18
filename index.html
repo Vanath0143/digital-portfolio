@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <center>
+            <h1 style="border:2px solid black">VASANTHA RAJAN MANGUDI</h1>
+            </center>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="profile-photo">
+              <center>  <img src="avatar.jpg" alt="Profile Photo" width="300" height="300">
+              </center>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Vasantha Rajan Mangudi, a dedicated Full Stack Developer with a strong background 
+        in cutting-edge programming applications and technologies. With six years of experience 
+        providing technical support for India's Intelligence Agency (RAW), I have honed my skills
+         in handling complex technical challenges with precision and efficiency. My expertise spans 
+         across the latest and most effective programming tools and frameworks, ensuring I stay at the 
+         forefront of technological advancements. Equipped with an education in advanced technical
+          support studies, I bring a unique blend of knowledge and experience to every project I undertake.
+           At 31 years old, I am committed to leveraging my skills to develop innovative solutions and drive 
+           impactful results.
+
+</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Demo front&back end web application</h3>
+            <p>This project is a simple web app that uses:
+<ul>
+<li>✅ HTML for structure(creating the form)</li>
+<li>✅ CSS for design(styling the form)</li>
+<li>✅ JavaScript for functionality(sending form data to the server)</li>
+<li>✅ Node.js with Express.js for the back end(handling form data and sending a response)</li>
+</ul>
+How it Works:
+<ol>
+<li>The user fills out the form.</li>
+<li>When the form is submitted, JavaScript sends the data to the server.</li>
+<li>The Node.js server receives the data and responds with a message.</li>
+<li>The message is displayed back on the web page.</li>
+</ol>
+
+This setup is simple yet powerful for building interactive web applications.<br>
+<p>project1 link:<a href="#" target="_blank">https://github.com/Vanath0143/FB_END_DM_WEB.git</a></p>
+
+</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>This project is a simple To-Do List App built using HTML, CSS, and JavaScript.
+How it Works:
+<ol>
+<li>✅HTML:</li>
+Creates the app structure with an input box, add button, and a list for tasks.
+<li>✅CSS:</li>
+Styles the app with a clean look, green buttons, and a user-friendly layout.
+<li>✅JavaScript:</li>
+Adds new tasks when you type in the input box and click "Add Task".
+Each task gets a Delete button that removes it when clicked.
+</ol>
+Steps to Run:
+<ol>
+<li>Copy the code files.</li>
+<li>Open index.html in your browser.</li>
+<li>Start adding tasks!</li>
+</ol>
+<p>project2 link:<a href="#" target="_blank">https://github.com/Vanath0143/DY_FTR_WEB_APP_DE</a></p>
+</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto: pmivanathpollonian@gmail.com">pmivanathpollonian@gmail.com</a></p>
+        <p>GitHub: <a href="#" target="_blank">https://github.com/Vanath0143</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VASANTHA RAJAN MANGUDI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.profile-photo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  /* Circular Image */
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}1
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+    </script>
